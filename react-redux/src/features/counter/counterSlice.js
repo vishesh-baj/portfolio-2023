@@ -4,26 +4,29 @@ const initialState = {
   count: 0,
 };
 
+// counter slice with all the actions
+
 export const counterSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
-    addCount: (state) => {
+    increment: (state) => {
       state.count += 1;
     },
-    subtractCount: (state) => {
+    decrement: (state) => {
       state.count -= 1;
     },
-    addByValue: (state, action) => {
+    incrementByAmount: (state, action) => {
       state.count += action.payload;
     },
-    subtractByValue: (state, action) => {
-      state.count -= action.payload;
+
+    reset: (state) => {
+      state.count = 0;
     },
   },
 });
 
-export const { addByValue, addCount, subtractByValue, subtractCount } =
+export const { increment, decrement, incrementByAmount, reset } =
   counterSlice.actions;
 
 export default counterSlice.reducer;
