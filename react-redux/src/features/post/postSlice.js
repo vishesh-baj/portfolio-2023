@@ -40,6 +40,22 @@ const postSlice = createSlice({
         };
       },
     },
+    postRemoved: {
+      reducer(state, action) {
+        state.posts.push(action.payload);
+      },
+      prepare(title, content, userId, specifics) {
+        return {
+          payload: {
+            id: nanoid(),
+            title,
+            content,
+            userId,
+            specifics,
+          },
+        };
+      },
+    },
   },
 });
 

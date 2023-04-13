@@ -12,6 +12,7 @@ const AddPostForm = () => {
   const onTitleChange = (e) => setTitle(e.target.value);
   const onContentChange = (e) => setContent(e.target.value);
   const onAuthorChange = () => setUserId(e.target.value);
+
   const onSavePostClicked = () => {
     if (title && content) {
       dispatch(postAdded(title, content, userId));
@@ -19,6 +20,18 @@ const AddPostForm = () => {
       setContent("");
     }
   };
+
+  const specifics = () => {
+    const arrObj = [
+      {
+        specifics: "123",
+      },
+    ];
+    const newArray = arrObj;
+    const specificsArr = arrObj;
+    return specificsArr;
+  };
+
   const userOptions = () =>
     users.map((user) => {
       return (
