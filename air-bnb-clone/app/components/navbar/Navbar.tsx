@@ -16,9 +16,6 @@ const Navbar = () => {
             <UserMenu />
           </div>
         </Container>
-
-        {/* const specific */}
-        <div></div>
       </div>
     </div>
   );
