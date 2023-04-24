@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 
 const Logo = () => {
   const router = useRouter();
-  router.refresh();
   return (
     <Image
       alt="Logo"
