@@ -48,3 +48,21 @@ console.log("REPLACE SURNAME: ", changeSurname(fullName, "Awesome"));
 
 // REPLACEALL____________________
 // ? The replaceAll() method returns a new string with all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. The original string is left unchanged.
+// * syntax
+// replaceAll(pattern, replacement)
+
+const sentence =
+  "The quick brown fox jumps over the lazy dog. If the dog reacted, was it real";
+
+const replacedVal = sentence.replaceAll("dog", "monkey");
+console.log("replace all val: ", replacedVal);
+
+// TOUPPERCASE____________________
+// ? converts string to uppercase
+const uppercaseWord = fullName.toUpperCase();
+console.log("uppercase word: ", uppercaseWord);
+
+// TOLOWERCASE____________________
+// ? converts string to lowercase
+const lowercaseWord = uppercaseWord.toLocaleLowerCase();
+console.log("lowercase word: ", lowercaseWord);
