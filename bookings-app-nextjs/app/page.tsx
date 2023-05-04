@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
-
 const inter = Inter({ subsets: ["latin"] });
+
 
 export default function Home() {
   return (
@@ -30,15 +29,17 @@ export default function Home() {
           {/* HEADER */}
           <header className="h-64 bg-gradient-to-r from-[#0f1f47] to-[#5f6984] p-2">
             <div className="text-center m-10">
-              <h1 className="text-white text-5xl font-bold mb-2">Find your table for any occasion</h1>
+              <h1 className="text-white text-5xl font-bold mb-2">
+                Find your table for any occasion
+              </h1>
             </div>
           </header>
           {/* HEADER */}
+
           {/* SEARCHBAR */}
           <div></div>
           {/* SEARCHBAR */}
         </main>
-
       </main>
     </main>
   );
