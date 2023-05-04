@@ -1,5 +1,6 @@
 import React, { FC, MouseEvent } from "react";
 import { IconType } from "react-icons";
+
 interface ButtonProps {
   label: string;
   onClick: (e: MouseEvent<HTMLButtonElement>) => void;
@@ -8,6 +9,7 @@ interface ButtonProps {
   small?: boolean;
   icon?: IconType;
 }
+
 const Button: FC<ButtonProps> = ({
   label,
   onClick,

@@ -3,6 +3,7 @@ import Modal from "./components/modals/Modal";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Nunito } from "@next/font/google";
+
 const font = Nunito({
   subsets: ["latin"],
 });
@@ -25,3 +26,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+

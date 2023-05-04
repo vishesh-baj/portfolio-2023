@@ -66,3 +66,24 @@ console.log("uppercase word: ", uppercaseWord);
 // ? converts string to lowercase
 const lowercaseWord = uppercaseWord.toLocaleLowerCase();
 console.log("lowercase word: ", lowercaseWord);
+
+// CONCAT__________________________
+// ? The concat() method concatenates the string arguments to the calling string and returns a new string.
+// * syntax
+//concat(str1)
+// concat(str1, str2)
+// concat(str1, str2, /* …, */ strN)
+const firstName = "Vishesh";
+const lastName = "Bajpayee";
+const designation = "Developer";
+const concatinatedWord = firstName.concat(" ", lastName);
+console.log("concatinated word: ", concatinatedWord);
+
+// SPLIT___________________________
+// ? The split() method takes a pattern and divides a String into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
+// * syntax
+// split(separator);
+// split(separator, limit);
+const splitName = "Vishesh-Bajpayee";
+const splittedName = splitName.split("-");
+console.log("splitted name: ", splittedName);
