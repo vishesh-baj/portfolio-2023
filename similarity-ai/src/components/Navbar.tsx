@@ -1,9 +1,5 @@
-import { getServers } from "dns";
 import { getServerSession } from "next-auth";
 import Link from "next/link";
-import React, { FC } from "react";
-
-interface NavbarProps {}
 
 const Navbar = async ({}) => {
   const session = await getServerSession();
@@ -40,5 +36,4 @@ const Navbar = async ({}) => {
     </div>
   );
 };
-
 export default Navbar;

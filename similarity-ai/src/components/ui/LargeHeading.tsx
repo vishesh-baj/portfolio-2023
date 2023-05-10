@@ -18,6 +18,8 @@ export const headingVariants = cva(
   }
 );
 
+// interface for the largeHeadingProps
+
 interface LargeHeadingProps
   extends React.HTMLAttributes<HTMLHeadingElement>,
     VariantProps<typeof headingVariants> {}
