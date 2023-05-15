@@ -42,7 +42,7 @@ const addAll = (a: number, b: number, c?: number): number => {
   }
   return a + b;
 };
-
+ 
 // default param value here
 const sumAll = (a: number = 10, b: number, c: number = 2): number => {
   return a + b + c;
